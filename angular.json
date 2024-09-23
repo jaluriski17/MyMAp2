@@ -19,7 +19,11 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
+            "assets": [{
+              "glob":"**/*",
+              "input":"node_modules/@arcgis/core/assets",
+              "output":"/assets"
+            },
               {
                 "glob": "**/*",
                 "input": "src/assets",
